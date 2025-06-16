@@ -1,6 +1,7 @@
 ﻿using Arna_Project_Track.Models;
 using Arna_Project_Track.Services;
 using Microsoft.AspNetCore.Mvc;
+using static Arna_Project_Track.Services.IProject;
 
 namespace Arna_Project_Track.Controllers
 {
@@ -31,13 +32,13 @@ namespace Arna_Project_Track.Controllers
             {
                 _project.AddProject(project);
                 _project.Save();
-                return RedirectToAction("AddProject");
+                return RedirectToAction("ProjectView");
             }
             return View(project);
         }
 
      // Display all data on the table
-        public IActionResult ProjectView()
+        public IActionResult ProjectView(Users users)
         {
             var projects = _project.GetAllProjects();
             return View(projects);
@@ -89,5 +90,52 @@ namespace Arna_Project_Track.Controllers
         }
 
 
+        //Search by ID
+        [HttpGet]
+        public IActionResult ProjectGetById()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ProjectGetById(int id)
+        {
+            var project = _project.GetProjectById(id);
+
+            if (project == null)
+            {
+                ViewBag.Message = "No project found for the given ID.";
+                return View();
+            }
+
+            return View(project);
+        }
+
+
+
+        //Login
+
+
+        //[HttpGet]
+        //public IActionResult Login()
+        //{
+        //    return View();
+        //}
+
+        //[HttpPost]
+        //public IActionResult Login(string email, string password)
+        //{
+        //    var user = Project.Login(email, password);
+        //    if (user != null)
+        //    {
+        //        // Save session or claims here if needed
+        //        TempData["Success"] = "Login successful!";
+        //        return RedirectToAction("Index", "Home");
+        //    }
+
+        //    ViewBag.Message = "Invalid email or password.";
+        //    return View();
+        //}
     }
+
 }

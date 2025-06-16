@@ -21,6 +21,20 @@ namespace Arna_Project_Track.Services
 
         void DeleteProject(Project project);
 
+        //Search by  ID
 
+        public interface IProjectService
+        {
+            Project? SearchProjectById(int id);
+        }
+
+
+        // Login
+
+
+        public interface IUserService
+        {
+            Users? Login(string email, string password);
+        }
     }
 }

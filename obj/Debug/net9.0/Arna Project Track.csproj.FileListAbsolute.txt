@@ -261,7 +261,7 @@ C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\rj
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\scopedcss\bundle\Arna Project Track.styles.css
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\scopedcss\projectbundle\Arna Project Track.bundle.scp.css
-C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\compressed\5i6i7kwlii-b9sayid5wm.gz
+C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\compressed\5i6i7kwlii-bz5p0gkkb2.gz
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\compressed\ndyth4o87x-61n19gt1b8.gz
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\compressed\qmyxyir72b-xtxxf3hu2r.gz
 C:\Users\admin\Desktop\Arna-Project-Track\Arna Project Track\obj\Debug\net9.0\compressed\km2s220atz-bqjiyaj88i.gz

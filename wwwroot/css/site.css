@@ -29,3 +29,17 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+#sidebar-wrapper {
+    min-height: 100vh;
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+}
+
+.list-group-item.active {
+    background-color: #e3f0fc;
+    color: #333;
+    font-weight: bold;
+}

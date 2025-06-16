@@ -1,0 +1,35 @@
+﻿
+@model Arna_Project_Track.Models.Project
+
+@{
+    ViewData["Title"] = "Get Project by ID";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="ProjectGetById" method="post">
+    <div class="form-group">
+        <label for="id">Enter Project ID</label>
+        <input type="number" name="id" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Search</button>
+</form>
+
+@if (Model != null)
+{
+    <hr />
+    <h4>Project Details</h4>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>ID:</strong> @Model.Id</li>
+        <li class="list-group-item"><strong>Name:</strong> @Model.Name</li>
+        <li class="list-group-item"><strong>Description:</strong> @Model.Description</li>
+        <li class="list-group-item"><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd")</li>
+        <li class="list-group-item"><strong>End Date:</strong> @Model.EndDate.ToString("yyyy-MM-dd")</li>
+        <li class="list-group-item"><strong>Status:</strong> @Model.Status</li>
+        <li class="list-group-item"><strong>Priority:</strong> @Model.Priority</li>
+    </ul>
+}
+else if (ViewBag.Message != null)
+{
+    <div class="alert alert-warning mt-3">@ViewBag.Message</div>
+}

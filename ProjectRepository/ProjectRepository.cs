@@ -1,5 +1,7 @@
 ﻿using Arna_Project_Track.Models;
 using Arna_Project_Track.Services;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Arna_Project_Track.Repositories
 {
@@ -24,11 +26,13 @@ namespace Arna_Project_Track.Repositories
 
         public List<Project> GetAllProjects()
         {
-            return _context.Projects.ToList();
+       
+            return _context.Projects
+                           .OrderByDescending(p => p.Id) 
+                           .ToList();
+
         }
 
-
-        //Upate project by id
         public Project GetProjectById(int id)
         {
             return _context.Projects.FirstOrDefault(p => p.Id == id);
@@ -40,14 +44,22 @@ namespace Arna_Project_Track.Repositories
             _context.SaveChanges();
         }
 
-
-        //Delete project by id
-
         public void DeleteProject(Project project)
         {
             _context.Projects.Remove(project);
             _context.SaveChanges();
         }
 
+        public Project? SearchProjectById(int id)
+        {
+            return _context.Projects.FirstOrDefault(p => p.Id == id);
+        }
+
+
+
+        public Users? Login(string email, string password)
+        {
+            return _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+        }
     }
 }
