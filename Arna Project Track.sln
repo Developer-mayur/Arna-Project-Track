@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arna Project Track", "Arna Project Track.csproj", "{796791C3-773D-4758-88CE-EBE1120E797D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796791C3-773D-4758-88CE-EBE1120E797D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796791C3-773D-4758-88CE-EBE1120E797D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796791C3-773D-4758-88CE-EBE1120E797D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796791C3-773D-4758-88CE-EBE1120E797D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF862701-6379-4F65-AD93-2ED411EF5F49}
+	EndGlobalSection
+EndGlobal
