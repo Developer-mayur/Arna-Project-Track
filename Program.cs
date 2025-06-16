@@ -1,7 +1,13 @@
+using Arna_Project_Track.Models;
+using Arna_Project_Track.services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MyDBContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
+builder.Services.AddTransient<IUserServices, UserServices>();
 
 var app = builder.Build();
 

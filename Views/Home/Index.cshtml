@@ -2,7 +2,27 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+            <h1 class="display-4 text-primary fw-bold mb-3">Welcome to Arna Project Tracker</h1>
+            <p class="lead text-muted mb-4">
+                Manage your projects, teams, timelines, and tasks in one place. Our simple and powerful system is designed for efficiency and clarity.
+            </p>
+            <div class="d-flex flex-column flex-md-row gap-3">
+                <a class="btn btn-success btn-lg px-4" asp-controller="Project" asp-action="AddProject">
+                    ➕ Add New Project
+                </a>
+                <a class="btn btn-outline-primary btn-lg px-4" asp-controller="Project" asp-action="ProjectView">
+                    📋 View Projects
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"
+                 alt="Project Tracking"
+                 class="img-fluid rounded shadow"
+                 style="max-height: 350px;" />
+        </div>
+    </div>
 </div>

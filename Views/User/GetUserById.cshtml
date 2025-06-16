@@ -1,0 +1,43 @@
+﻿@model Arna_Project_Track.Models.User
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="container mt-5">
+    <h2 class="text-primary mb-4">User Details</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">First Name</dt>
+                <dd class="col-sm-9">@Model.FirstName</dd>
+
+                <dt class="col-sm-3">Last Name</dt>
+                <dd class="col-sm-9">@Model.LastName</dd>
+
+                <dt class="col-sm-3">Email</dt>
+                <dd class="col-sm-9">@Model.Email</dd>
+
+                <dt class="col-sm-3">Password</dt>
+                <dd class="col-sm-9">@Model.Password</dd>
+
+                <dt class="col-sm-3">Role</dt>
+                <dd class="col-sm-9">@Model.Role</dd>
+
+                <dt class="col-sm-3">Department</dt>
+                <dd class="col-sm-9">@Model.Department</dd>
+
+                <dt class="col-sm-3">Joining Date</dt>
+                <dd class="col-sm-9">@Model.JoiningDate)</dd>
+
+                <dt class="col-sm-3">Employee Role</dt>
+                <dd class="col-sm-9">@Model.EmployeeRoleNavigation?.RoleName</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="EditUser" asp-route-id="@Model?.UserId" class="btn btn-warning me-2">Edit</a>
+            <a asp-action="GetAllUsers" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
