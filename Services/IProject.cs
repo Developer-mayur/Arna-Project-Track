@@ -32,9 +32,9 @@ namespace Arna_Project_Track.Services
         // Login
 
 
-        public interface IUserService
-        {
-            Users? Login(string email, string password);
-        }
+        //public interface IUserService
+        //{
+        //    Users? Login(string email, string password);
+        //}
     }
 }

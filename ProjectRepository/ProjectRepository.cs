@@ -14,15 +14,19 @@ namespace Arna_Project_Track.Repositories
             _context = context;
         }
 
+        //add Project
         public void AddProject(Project project)
         {
             _context.Projects.Add(project);
         }
 
+       
         public void Save()
         {
             _context.SaveChanges();
         }
+
+        //get all project
 
         public List<Project> GetAllProjects()
         {
@@ -33,23 +37,28 @@ namespace Arna_Project_Track.Repositories
 
         }
 
+        //get project by Id
         public Project GetProjectById(int id)
         {
             return _context.Projects.FirstOrDefault(p => p.Id == id);
         }
 
+
+        //update project by ID
         public void UpdateProject(Project project)
         {
             _context.Projects.Update(project);
             _context.SaveChanges();
         }
 
+        //Delete project
         public void DeleteProject(Project project)
         {
             _context.Projects.Remove(project);
             _context.SaveChanges();
         }
 
+        //serach project by ID
         public Project? SearchProjectById(int id)
         {
             return _context.Projects.FirstOrDefault(p => p.Id == id);
@@ -57,9 +66,9 @@ namespace Arna_Project_Track.Repositories
 
 
 
-        public Users? Login(string email, string password)
-        {
-            return _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-        }
+        //public Users? Login(string email, string password)
+        //{
+        //    return _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+        //}
     }
 }

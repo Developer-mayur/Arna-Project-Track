@@ -2,6 +2,7 @@ using Arna_Project_Track.Models;
 using Arna_Project_Track.Services;
 using Microsoft.EntityFrameworkCore;
 using Arna_Project_Track.Repositories;
+using Arna_Project_Track.ProjectRepository;
 
 
 
@@ -9,9 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 builder.Services.AddDbContext<AppDbContext>(option=>option.UseSqlServer(
     builder.Configuration.GetConnectionString("MyConnection")));
 builder.Services.AddTransient<IProject,ProjectRepository>();
+builder.Services.AddTransient<IAuth, AuthRepository>();
+
 
 
 var app = builder.Build();
@@ -26,6 +30,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 
 app.UseAuthorization();
 

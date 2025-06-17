@@ -20,6 +20,10 @@ namespace Arna_Project_Track.Controllers
         [HttpGet]
         public IActionResult AddProject()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             return View();
         }
 
@@ -28,6 +32,10 @@ namespace Arna_Project_Track.Controllers
         [HttpPost]
         public IActionResult AddProject(Project project)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             if (ModelState.IsValid)
             {
                 _project.AddProject(project);
@@ -37,9 +45,13 @@ namespace Arna_Project_Track.Controllers
             return View(project);
         }
 
-     // Display all data on the table
+        // Display all data on the table
         public IActionResult ProjectView(Users users)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             var projects = _project.GetAllProjects();
             return View(projects);
         }
@@ -68,7 +80,7 @@ namespace Arna_Project_Track.Controllers
             if (ModelState.IsValid)
             {
                 _project.UpdateProject(project);
-                TempData["Success"] = "Updata data Successfull";
+                // TempData["Success"] = "Updata data Successfull";
                 return RedirectToAction("ProjectView");
             }
 
@@ -94,12 +106,20 @@ namespace Arna_Project_Track.Controllers
         [HttpGet]
         public IActionResult ProjectGetById()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult ProjectGetById(int id)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
             var project = _project.GetProjectById(id);
 
             if (project == null)
@@ -112,30 +132,6 @@ namespace Arna_Project_Track.Controllers
         }
 
 
-
-        //Login
-
-
-        //[HttpGet]
-        //public IActionResult Login()
-        //{
-        //    return View();
-        //}
-
-        //[HttpPost]
-        //public IActionResult Login(string email, string password)
-        //{
-        //    var user = Project.Login(email, password);
-        //    if (user != null)
-        //    {
-        //        // Save session or claims here if needed
-        //        TempData["Success"] = "Login successful!";
-        //        return RedirectToAction("Index", "Home");
-        //    }
-
-        //    ViewBag.Message = "Invalid email or password.";
-        //    return View();
-        //}
     }
 
 }
