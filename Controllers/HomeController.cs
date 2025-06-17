@@ -15,6 +15,8 @@ namespace Arna_Project_Track.Controllers
 
         public IActionResult Index()
         {
+            var email = HttpContext.Session.GetString("UserEmail");
+            ViewBag.UserEmail = email;
             return View();
         }
 

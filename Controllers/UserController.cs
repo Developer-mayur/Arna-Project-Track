@@ -22,12 +22,20 @@ namespace Arna_Project_Track.Controllers
         }
         public async Task<IActionResult> AddUser()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Login");
+            }
             ViewBag.EmployeeRole = new SelectList(await _context.EmployeeRoles.ToListAsync(), "RoleId", "RoleName");
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> AddUser(User user)
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (ModelState.IsValid)
             {
                 await _userServices.AddUser(user);
@@ -38,26 +46,14 @@ namespace Arna_Project_Track.Controllers
             ViewBag.EmployeeRole = new SelectList(_context.EmployeeRoles.ToList(), "RoleId", "RoleName");
             return View(user);
         }
-        // POST: AddUser
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> AddUser(User user)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        _context.Users.Add(user);
-        //        await _context.SaveChangesAsync();
-        //        TempData["Success"] = "User added successfully!";
-        //        return RedirectToAction("GetAllUsers");
-        //    }
-
-        //    ViewBag.EmployeeRole = new SelectList(await _context.EmployeeRoles.ToListAsync(), "RoleId", "RoleName");
-        //    return View(user);
-        //}
-
+       
 
         public async Task<IActionResult> GetAllUsers()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("UserEmail")))
+            {
+                return RedirectToAction("Login", "Login");
+            }
             var users = await _userServices.GetAllUsers();
             return View(users);
         }
@@ -75,6 +71,7 @@ namespace Arna_Project_Track.Controllers
         [HttpGet]
         public async Task<IActionResult> EditUser(int id)
         {
+           
             var user = await _userServices.GetUserByIdAsync(id);
             if (user == null)
                 return NotFound();

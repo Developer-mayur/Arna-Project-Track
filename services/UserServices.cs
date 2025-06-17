@@ -30,11 +30,12 @@ namespace Arna_Project_Track.services
             return await _context.Users.FirstOrDefaultAsync(u => u.UserId == id);
         }
 
-        public void EditUserAsync(User updatedUser)
+
+        public async Task EditUserAsync(User updatedUser)
         {
             _context.Users.Update(updatedUser);
 
-            _context.SaveChangesAsync();
+           await _context.SaveChangesAsync();
 
         }
 

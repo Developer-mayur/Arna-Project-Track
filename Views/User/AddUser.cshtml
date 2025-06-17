@@ -65,13 +65,5 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 
-    <script>
-        // ✅ JavaScript Alert for Success Message
-        @if (TempData["Success"] != null)
-        {
-                <text>
-                    alert('@TempData["Success"]');
-                </text>
-        }
-    </script>
+   
 }

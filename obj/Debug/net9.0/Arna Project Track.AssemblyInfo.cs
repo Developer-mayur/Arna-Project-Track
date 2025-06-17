@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arna Project Track")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c51bd8a833d2471dc684deec145c720c50a8323")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c79eb765fc040e22316e72e9a7cad5567d36d4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arna Project Track")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arna Project Track")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
