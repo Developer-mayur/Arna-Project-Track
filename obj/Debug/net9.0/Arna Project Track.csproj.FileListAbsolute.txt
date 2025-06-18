@@ -10,6 +10,8 @@ C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Arna Project
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Humanizer.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\System.Net.Http.Formatting.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\System.Web.Http.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.Build.dll
@@ -54,6 +56,7 @@ C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.Id
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.NET.StringTools.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -73,6 +76,10 @@ C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\NuGet.Packag
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\NuGet.ProjectModel.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\NuGet.Protocol.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\NuGet.Versioning.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\Swashbuckle.Core.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -252,6 +259,7 @@ C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.AssemblyInfoInputs.cache
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.AssemblyInfo.cs
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.csproj.CoreCompileInputs.cache
+C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.RazorAssemblyInfo.cache
 C:\Users\Admin\3D Objects\Day21\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.RazorAssemblyInfo.cs
