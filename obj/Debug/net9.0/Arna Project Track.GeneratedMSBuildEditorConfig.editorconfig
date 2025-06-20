@@ -17,69 +17,69 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Arna_Project_Track
 build_property.RootNamespace = Arna_Project_Track
-build_property.ProjectDir = C:\Users\Admin\Desktop\Arna-Project-Track\
+build_property.ProjectDir = C:\Users\User\Documents\Learnings\Day31\Mvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\Arna-Project-Track
+build_property.MSBuildProjectDirectory = C:\Users\User\Documents\Learnings\Day31\Mvc
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Home/About.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Home/Index.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Home/Privacy.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Login/Login.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Shared/Error.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/User/AddUser.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/User/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/User/DeleteUser.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/User/DeleteUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGVVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/User/EditUser.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/User/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/User/GetAllUsers.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/User/GetAllUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRBbGxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/User/GetUserById.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/User/GetUserById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRVc2VyQnlJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/_ViewImports.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/_ViewStart.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Arna-Project-Track/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Documents/Learnings/Day31/Mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2sfju46whr
