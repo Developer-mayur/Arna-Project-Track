@@ -1,6 +1,9 @@
 using Arna_Project_Track.Models;
 using Arna_Project_Track.services;
+using Arna_Project_Track.Services;
 using Microsoft.EntityFrameworkCore;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MyDBContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("MyConnection")));
 builder.Services.AddTransient<IUserServices, UserServices>();
 builder.Services.AddTransient<ILogin, Login>();
+builder.Services.AddTransient<IProject, ProjectServices>();
 
 builder.Services.AddSession(options =>
 {
@@ -16,7 +20,8 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
+builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+builder.Services.AddTransient<IEmail, EmailServices>();
 
 var app = builder.Build();
 
@@ -28,6 +33,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseSession();
+
 
 app.UseHttpsRedirection();
 app.UseRouting();

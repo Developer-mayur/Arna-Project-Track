@@ -33,5 +33,7 @@ namespace Arna_Project_Track.Models
 
         [ForeignKey("EmployeeRole")]
         public EmployeeRole? EmployeeRoleNavigation { get; set; }
+
+        public virtual ActiveUser? ActiveUser { get; set; }
     }
 }

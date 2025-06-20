@@ -36,6 +36,15 @@
 
                 <a class="list-group-item list-group-item-action @(currentController == "User" && currentAction == "GetAllUsers" ? "active text-white bg-primary" : "")"
                    asp-area="" asp-controller="User" asp-action="GetAllUsers">All Users</a>
+
+                    <a class="list-group-item list-group-item-action @(currentController == "Email" && currentAction == "EmailSend" ? "active text-white bg-primary" : "")"
+                   asp-area="" asp-controller="Email" asp-action="EmailSend">Send Email</a>
+
+                    <a class="list-group-item list-group-item-action @(ViewContext.RouteData.Values["action"]!.ToString() == "ProjectGetById" ? "active" : "")"
+                   asp-area="" asp-controller="Project" asp-action="ProjectGetById">🔍 Search Project</a>
+
+                   <a class="list-group-item list-group-item-action @(ViewContext.RouteData.Values["action"]!.ToString() == "ProjectGetById" ? "active" : "")"
+                   asp-area="" asp-controller="Project" asp-action="ViewAllProjects">🔍 view All Project</a>
             </div>
         </div>
 

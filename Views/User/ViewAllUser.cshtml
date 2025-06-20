@@ -1,0 +1,30 @@
+﻿@model List<User>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th> <!-- Online/Offline -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName @user.LastName</td>
+                <td>@user.Email</td>
+                <td>
+                    @if (user.ActiveUser?.IsOnline == true)
+                    {
+                        <span style="color: green;">🟢 Online</span>
+                    }
+                    else
+                    {
+                        <span style="color: gray;">⚫ Offline</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -13,8 +13,10 @@ namespace Arna_Project_Track.services
         public async Task<User> AuthenticateAsync(string email, string password)
         {
             return await _context.Users
-                .FirstOrDefaultAsync(u => u.Email==email && u.Password == password);
+                .FirstOrDefaultAsync(u => u.Email == email && u.Password == password);
         }
-       
+
+
+
     }
 }

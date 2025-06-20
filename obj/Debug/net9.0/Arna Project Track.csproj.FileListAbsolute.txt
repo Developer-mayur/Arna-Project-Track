@@ -321,6 +321,8 @@ C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\peiq1w1t25
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\ourhjkdmdf-9vr69e8ynj.gz
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\g3pndkykjo-87fc7y1x7t.gz
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\eks70ndfui-mlv21k5csn.gz
+C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\57jvo5xb3n-wrauhi50h6.gz
+C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\cf4rv1yf5m-wrauhi50h6.gz
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\staticwebassets.development.json
@@ -332,5 +334,3 @@ C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\refint\Arna Project T
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.pdb
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\Arna Project Track.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\ref\Arna Project Track.dll
-C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\57jvo5xb3n-wrauhi50h6.gz
-C:\Users\Admin\Desktop\Arna-Project-Track\obj\Debug\net9.0\compressed\cf4rv1yf5m-wrauhi50h6.gz

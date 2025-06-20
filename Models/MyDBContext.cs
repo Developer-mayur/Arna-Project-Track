@@ -19,8 +19,11 @@ public partial class MyDBContext : DbContext
 
     public virtual DbSet<EmployeeRole> EmployeeRoles { get; set; }
 
+    public virtual DbSet<Project> Projects { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
-   
+
+    public DbSet<ActiveUser> ActiveUsers { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
 
@@ -32,6 +35,13 @@ public partial class MyDBContext : DbContext
            .HasOne(u => u.EmployeeRoleNavigation)
            .WithMany(e => e.Users)
            .HasForeignKey(u => u.EmployeeRole);
+
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<ActiveUser>()
+            .HasOne(a => a.User)
+            .WithMany()
+            .HasForeignKey(a => a.UserId);
 
         modelBuilder.Entity<EmployeeRole>(entity =>
         {

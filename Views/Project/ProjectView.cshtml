@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Arna_Project_Track.Models.Project>
+
+@{
+    ViewData["Title"] = "All Projects";
+}
+
+<div class="d-flex justify-content-between align-items-center my-4">
+    <h2 class="text-primary mb-0">All Projects</h2>
+    <a asp-action="AddProject" class="btn btn-success">
+        +Add New
+    </a>
+</div>
+
+<table class="table table-hover table-bordered shadow-sm"
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Priority</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td>@project.Id</td>
+                <td>@project.Name</td>
+                <td>@project.Description</td>
+                <td>@project.StartDate.ToShortDateString()</td>
+                <td>@project.EndDate.ToShortDateString()</td>
+                <td>@project.Status</td>
+                <td>@project.Priority</td>
+                <td class="text-center">
+                    <div class="d-flex flex-column gap-2">
+                        <a asp-action="EditProject" asp-route-id="@project.Id" class="btn btn-outline-warning btn-sm">
+                            ✏️ Edit
+                        </a>
+
+                        <button type="button"
+                                class="btn btn-outline-danger btn-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal-@project.Id">
+                            🗑️ Delete
+                        </button>
+                    </div>
+
+                    <!-- Delete Confirmation Modal -->
+                    <div class="modal fade" id="deleteModal-@project.Id" tabindex="-1" aria-labelledby="deleteModalLabel-@project.Id" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content border-0 shadow">
+                                <div class="modal-header bg-danger text-white">
+                                    <h5 class="modal-title" id="deleteModalLabel-@project.Id">Confirm Deletion</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete the project <strong>@project.Name</strong>?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <form asp-action="DeleteProject" asp-route-id="@project.Id" method="post" class="d-inline">
+                                        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

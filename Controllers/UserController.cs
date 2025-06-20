@@ -111,5 +111,14 @@ namespace Arna_Project_Track.Controllers
             return RedirectToAction("GetAllUsers");
         }
 
+        public IActionResult ViewAllUsers()
+        {
+            var users = _context.Users
+                .Include(u => u.ActiveUser) 
+                .ToList();
+
+            return View(users);
+        }
+
     }
 }

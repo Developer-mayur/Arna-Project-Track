@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "EmailSend";
+}
+
+@model Arna_Project_Track.Models.EmailModel
+
+<h2>Send Email</h2>
+
+<form asp-action="EmailSend" method="post">
+    <div>
+        <label>To:</label>
+        <input asp-for="ToEmail" class="form-control" />
+    </div>
+    <div>
+        <label>Subject:</label>
+        <input asp-for="Subject" class="form-control" />
+    </div>
+    <div>
+        <label>Body:</label>
+        <textarea asp-for="Body" class="form-control" rows="5"></textarea>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: green">@ViewBag.Message</p>
+}
+

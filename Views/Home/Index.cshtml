@@ -1,6 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@* @{
+    Layout = "view/shered/_admin";
+} *@
 
 <div class="container py-5">
     <div class="row align-items-center">
@@ -16,6 +19,7 @@
                 <a class="btn btn-outline-primary btn-lg px-4" asp-controller="Project" asp-action="ProjectView">
                     📋 View Projects
                 </a>
+               
             </div>
         </div>
         <div class="col-md-6 text-center mt-4 mt-md-0">
